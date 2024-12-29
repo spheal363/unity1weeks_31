@@ -28,7 +28,5 @@ public class PlayerAnimator : MonoBehaviour
             animator.SetFloat("X", moveDir.x);
             animator.SetFloat("Y", moveDir.y);
         }
-
-        Debug.Log(moveDir);
     }
 }
