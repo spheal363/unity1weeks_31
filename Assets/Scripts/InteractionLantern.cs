@@ -6,6 +6,7 @@ public class InteractionLantern : MonoBehaviour {
     [SerializeField] private GameObject lanternPrefab;
     [SerializeField] private float lanternCount = 2;
     [SerializeField] private MapGenerator mapGenerator;
+    [SerializeField] private AudioSource SettingLanternSE;
 
     private Player player;
 
@@ -34,6 +35,8 @@ public class InteractionLantern : MonoBehaviour {
             lanternCount--;
 
             Goal.AddLanternCount();
+
+            SettingLanternSE.Play();
         }
 
         // 既にランタンがあるなら回収 (破壊リクエストを投げる)
@@ -43,6 +46,8 @@ public class InteractionLantern : MonoBehaviour {
 
             // 破壊リクエストをイベントで通知 (※座標はVector2Intで渡す)
             OnLanternDestroyRequested?.Invoke(lanternPos);
+
+            SettingLanternSE.Play();
         }
     }
 }

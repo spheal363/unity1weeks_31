@@ -12,9 +12,17 @@ public class TitlePlayer : MonoBehaviour {
     [SerializeField] private Image image; // Imageコンポーネント
     [SerializeField] private Sprite[] walkSprites; // 歩行アニメーション用のスプライト配列
     [SerializeField] private float frameRate = 0.1f; // フレームレート（画像の切り替え間隔）
+    [SerializeField] private AudioClip walkSE; // 歩行音のAudioClip
 
     private bool isShrinking = false;
     private int currentFrame = 0;
+    private AudioSource audioSource; // AudioSourceコンポーネント
+
+    void Start() {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = walkSE;
+        audioSource.loop = true; // ループ再生を有効にする
+    }
 
     void Update() {
         if (!isShrinking && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))) {
@@ -44,10 +52,18 @@ public class TitlePlayer : MonoBehaviour {
     }
 
     private IEnumerator PlayWalkAnimation() {
+        audioSource.Play(); // 歩行音を再生
         while (isShrinking) {
             image.sprite = walkSprites[currentFrame];
             currentFrame = (currentFrame + 1) % walkSprites.Length;
             yield return new WaitForSeconds(frameRate);
+        }
+        audioSource.Stop(); // 歩行音を停止
+    }
+
+    public void ResetWalkSE() {
+        if (audioSource != null) {
+            audioSource.Stop();
         }
     }
 }

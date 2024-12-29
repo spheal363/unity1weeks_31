@@ -6,6 +6,7 @@ public class Player : MapObject {
     [SerializeField] private GameInput gameInput;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private InteractionLantern interactionLantern;
+    [SerializeField] private AudioSource walkSE;
 
     private bool isWalking;
     private bool isMoving;
@@ -42,8 +43,6 @@ public class Player : MapObject {
 
         // mapGenerator が既にアサインされていることを前提に座標をセット
         transform.localPosition = mapGenerator.ScreenPos(currentPos);
-
-        Debug.Log(interactionLantern);
     }
 
     private void Update() {
@@ -94,6 +93,8 @@ public class Player : MapObject {
 
     private IEnumerator _move() {
         isMoving = true;
+        walkSE.Play(); // 歩行音を再生
+
         // nextPos を計算
         nextPos = currentPos + new Vector2Int(move[(int)direction, 0], move[(int)direction, 1]);
 
@@ -117,9 +118,10 @@ public class Player : MapObject {
             // ゴールに到達したらクリアシーンへ
             if (mapGenerator.GetNextMapType(currentPos) == MapGenerator.MAP_TYPE.GOAL) {
                 ChangeScene.ChangeToScene(CLEAR_SCENE);
-
             }
         }
+
+        walkSE.Stop(); // 歩行音を停止
         isMoving = false;
     }
 }

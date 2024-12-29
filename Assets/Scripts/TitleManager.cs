@@ -5,9 +5,11 @@ public class TitleManager : MonoBehaviour {
     public GameObject instructionCanvas; // 操作説明画面のCanvas
     private bool isInstructionVisible = false; // 現在操作説明が表示されているかどうか
     private TextBlinking textBlinking;
+    private TitlePlayer titlePlayer;
 
     void Start() {
         textBlinking = titleCanvas.GetComponentInChildren<TextBlinking>();
+        titlePlayer = FindObjectOfType<TitlePlayer>();
     }
 
     void Update() {
@@ -36,5 +38,10 @@ public class TitleManager : MonoBehaviour {
         instructionCanvas.SetActive(false);
         isInstructionVisible = false;
         textBlinking.StartBlinking(); // TextBlinkingのコルーチンを再開
+
+        // TitlePlayerのwalkSEの再生状態をリセット
+        if (titlePlayer != null) {
+            titlePlayer.ResetWalkSE();
+        }
     }
 }
