@@ -31,6 +31,7 @@ public class Player : MonoBehaviour {
     private void Start() {
         direction = DIRECTION.DOWN;
         currentPos = new Vector2Int(1, 1);
+        Debug.Log(mapGenerator.ScreenPos(currentPos));
         transform.localPosition = mapGenerator.ScreenPos(currentPos);
     }
 

@@ -18,7 +18,7 @@ public class MapGenerator : MonoBehaviour {
     }
     MAP_TYPE[,] mapTable;
 
-    void Start() {
+    void Awake() {
         _loadMapData();
         _createMap();
     }
