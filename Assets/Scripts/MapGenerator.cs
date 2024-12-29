@@ -14,7 +14,8 @@ public class MapGenerator : MonoBehaviour {
     public enum MAP_TYPE {
         GROUND,
         WALL,
-        PLAYER
+        PLAYER,
+        LANTERN
     }
     MAP_TYPE[,] mapTable;
 
@@ -69,7 +70,6 @@ public class MapGenerator : MonoBehaviour {
                 GameObject _ground = Instantiate(prefabs[(int)MAP_TYPE.GROUND], transform);
                 GameObject _map = Instantiate(prefabs[(int)mapTable[x, y]], transform);
 
-
                 _ground.transform.position = ScreenPos(pos);
                 _map.transform.position = ScreenPos(pos);
 
@@ -80,7 +80,6 @@ public class MapGenerator : MonoBehaviour {
         }
     }
 
-    //追加　サイズを考慮したポジションを取得する関数
     public Vector2 ScreenPos(Vector2Int _pos) {
         return new Vector2(
             _pos.x * mapSize - centerPos.x,
@@ -89,5 +88,10 @@ public class MapGenerator : MonoBehaviour {
 
     public MAP_TYPE GetNextMapType(Vector2Int _pos) {
         return mapTable[_pos.x, _pos.y];
+    }
+
+    // SetMapTypeメソッドを追加
+    public void SetMapType(Vector2Int _pos, MAP_TYPE type) {
+        mapTable[_pos.x, _pos.y] = type;
     }
 }

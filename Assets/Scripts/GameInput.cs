@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameInput : MonoBehaviour {
     private PlayerInputActions playerInputActions;
@@ -12,8 +13,12 @@ public class GameInput : MonoBehaviour {
 
     public Vector2 GetMovementVectorNormalized() {
         Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
-
         inputVector = inputVector.normalized;
         return inputVector;
+    }
+
+    public bool IsPlaceLanternPressed()
+    {
+        return playerInputActions.Player.Interaction.triggered;
     }
 }
