@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2d471fc1935238645b2064333ff5338f
+guid: 664e808a1be17d84680dc1cf76fdd9c7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: douro_0
+      name: Cave1-A2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 16
-        height: 16
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18ace853eb15a2b438308ccb28d2dd02
-      internalID: 1170229126
+      spriteID: 5811f8d95c527054cb445307e859f6a9
+      internalID: 1080463334
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      douro_0: 1170229126
+      Cave1-A2_0: 1080463334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

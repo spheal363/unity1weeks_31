@@ -92,9 +92,7 @@ public class MazeCreator {
             if (cell != null) {
                 Dig(cell.X, cell.Y);
             }
-
         }
-
     }
 
     void SetPath(int _x, int _y) {
@@ -112,7 +110,6 @@ public class MazeCreator {
         startCells.RemoveAt(idx);
         return cell;
     }
-
 }
 
 public class Cell {
