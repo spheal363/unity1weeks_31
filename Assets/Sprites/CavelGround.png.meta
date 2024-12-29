@@ -110,11 +110,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cave1-A2_0
+      name: ground
       rect:
         serializedVersion: 2
         x: 0
         y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5811f8d95c527054cb445307e859f6a9
+      internalID: 1080463334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 257
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5f627079d4ac442950078da41969b3
+      internalID: 1730076666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -124,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5811f8d95c527054cb445307e859f6a9
-      internalID: 1080463334
+      spriteID: 0eb924bc6bf13cd43a5239d2710ddc8f
+      internalID: 143484622
       vertices: []
       indices: 
       edges: []
@@ -141,7 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cave1-A2_0: 1080463334
+      ground: 1080463334
+      wall1: 1730076666
+      wall2: 143484622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
