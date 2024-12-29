@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mapchip_0
+      name: right
       rect:
         serializedVersion: 2
         x: 32
@@ -118,7 +118,7 @@ TextureImporter:
         width: 16
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mapchip_1
+      name: left
       rect:
         serializedVersion: 2
         x: 16
@@ -139,7 +139,7 @@ TextureImporter:
         width: 16
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,8 +162,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mapchip_0: 554617472
-      mapchip_1: -1317669467
+      left: -1317669467
       mapchip_10: -1971726601
       mapchip_11: -446689771
       mapchip_2: 702778011
@@ -174,6 +173,7 @@ TextureImporter:
       mapchip_7: 1101419422
       mapchip_8: 1449544668
       mapchip_9: -1941151301
+      right: 554617472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
