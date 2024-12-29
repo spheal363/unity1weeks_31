@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using unityroom.Api;
 
 public class ScoreManager : MonoBehaviour {
     private int lanternCount;
@@ -41,6 +42,8 @@ public class ScoreManager : MonoBehaviour {
 
         // ï\é¶ÇçXêV
         UpdateScoreText();
+
+        UnityroomApiClient.Instance.SendScore(1, score, ScoreboardWriteMode.HighScoreDesc);
     }
 
     private void UpdateScoreText() {
