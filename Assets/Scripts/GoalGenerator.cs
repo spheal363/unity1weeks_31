@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static MapGenerator;
 
 public class GoalGenerator : MonoBehaviour {
     [SerializeField] private MapGenerator mapGenerator;
@@ -19,6 +20,7 @@ public class GoalGenerator : MonoBehaviour {
 
         // ゴールオブジェクトを生成
         Instantiate(goalPrefab, goalWorldPos, Quaternion.identity);
+        mapGenerator.SetMapType(goalPosition, MAP_TYPE.GOAL);
     }
 
     Vector2Int FindGoalPosition() {

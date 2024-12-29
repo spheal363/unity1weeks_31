@@ -15,7 +15,8 @@ public class MapGenerator : MonoBehaviour {
         GROUND,
         WALL,
         PLAYER,
-        LANTERN
+        LANTERN,
+        GOAL
     }
     MAP_TYPE[,] mapTable;
 
@@ -90,7 +91,6 @@ public class MapGenerator : MonoBehaviour {
         return mapTable[_pos.x, _pos.y];
     }
 
-    // SetMapTypeÉÅÉ\ÉbÉhÇí«â¡
     public void SetMapType(Vector2Int _pos, MAP_TYPE type) {
         mapTable[_pos.x, _pos.y] = type;
     }

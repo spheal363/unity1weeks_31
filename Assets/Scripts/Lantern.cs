@@ -8,6 +8,8 @@ public class Lantern : MapObject {
 
     private void HandleLanternDestroyRequest(Vector2Int pos)
     {
+        Debug.Log(pos);
+        Debug.Log(currentPos);
         if (pos == currentPos) {
             Destroy(gameObject);
         }

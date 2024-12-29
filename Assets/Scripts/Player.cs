@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 public class Player : MapObject {
+    private const string CLEAR_SCENE = "Clear";
     [SerializeField] private GameInput gameInput;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private InteractionLantern interactionLantern;
@@ -96,6 +97,8 @@ public class Player : MapObject {
         // nextPos を計算
         nextPos = currentPos + new Vector2Int(move[(int)direction, 0], move[(int)direction, 1]);
 
+        Debug.Log(mapGenerator.GetNextMapType(nextPos));
+
         // 壁でない場合のみ移動
         if (mapGenerator.GetNextMapType(nextPos) != MapGenerator.MAP_TYPE.WALL) {
             Vector2 startPos = transform.localPosition;
@@ -110,8 +113,13 @@ public class Player : MapObject {
 
             transform.localPosition = endPos;
             currentPos = nextPos;
-        }
 
+            // ゴールに到達したらクリアシーンへ
+            if (mapGenerator.GetNextMapType(currentPos) == MapGenerator.MAP_TYPE.GOAL) {
+                ChangeScene.ChangeToScene(CLEAR_SCENE);
+
+            }
+        }
         isMoving = false;
     }
 }
