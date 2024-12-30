@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 216878767}
   - component: {fileID: 216878766}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: KanbanMessage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,16 +484,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216878763}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.59171593, y: 0.59171593, z: 0.59171593}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 383396159}
+  m_Father: {fileID: 590448701}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 328.7, y: -123.6}
+  m_AnchoredPosition: {x: -0.000030517578, y: 9.585793}
   m_SizeDelta: {x: 210.8594, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216878766
@@ -691,7 +691,6 @@ RectTransform:
   - {fileID: 1104412051}
   - {fileID: 590448701}
   - {fileID: 790659677}
-  - {fileID: 216878764}
   - {fileID: 184137050}
   - {fileID: 979389450}
   - {fileID: 554779552}
@@ -1178,7 +1177,7 @@ GameObject:
   - component: {fileID: 590448703}
   - component: {fileID: 590448702}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Kanban
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,7 +1194,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.69, y: 1.69, z: 1.69}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 216878764}
   m_Father: {fileID: 383396159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

@@ -33,11 +33,7 @@ public class Player : MapObject {
     // Unityイベント
     //--------------------------------------------------------------------------------
 
-    // MapObject の Start() が abstract/virtual でなければ
-    // override ではなく普通の Start() としてもOK
     protected virtual void Start() {
-        // MapObject のプロパティ (CurrentPos など) を初期化
-        // もしくは MapObject の Initialize() を使う
         direction = DIRECTION.DOWN;
         currentPos = new Vector2Int(1, 1);
 
@@ -50,6 +46,13 @@ public class Player : MapObject {
 
         // 入力取得
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+
+        // 2つ以上のキーが押されていたら動作を停止
+        if (Mathf.Abs(inputVector.x) > 0 && Mathf.Abs(inputVector.y) > 0) {
+            isWalking = false;
+            return;
+        }
+
         moveDir = new Vector2(inputVector.x, inputVector.y);
         isWalking = (moveDir != Vector2.zero);
 

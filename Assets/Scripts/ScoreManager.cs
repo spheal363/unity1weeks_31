@@ -50,4 +50,8 @@ public class ScoreManager : MonoBehaviour {
         // 3桁区切りで表示（#,0 はカンマ区切り）
         scoreText.text = score.ToString("#,0");
     }
+
+    public int GetScore() {
+        return score;
+    }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b364f0cd39fed9d49adf4358251948a2
+guid: e13cc12b879b4b444b411239dd256b11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,136 +110,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass
+      name: CaveGoods_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 351
-        width: 32
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c40efa50ab2439499e12bd9bfeab958
-      internalID: 674179960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d511834a884d176478da8cc06f6331f4
-      internalID: 1894294340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower2
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 913576f1830c96f43bdea3efaffdff48
-      internalID: -849528552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ec924fa590bf8845a27ef71bc3fe3c1
-      internalID: -690512184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower4
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7c0e4ca0e512024ca308be211067d90
-      internalID: 1828872683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower5
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f0cc5820eb19db4a98b37028c09a97b
-      internalID: -732526379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrightForest_0
-      rect:
-        serializedVersion: 2
-        x: 128
+        x: 384
         y: 320
         width: 32
         height: 32
@@ -250,17 +124,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc94417a33ea4749bf6d4e1005f920c
-      internalID: -1619886282
+      spriteID: d86dcde989dc5444dbea20e254f5a40f
+      internalID: -1431170555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrightForest_1
+      name: CaveGoods_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 416
         y: 320
         width: 32
         height: 32
@@ -271,17 +145,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3526feedb3ea3148af6e56f30c3e4fc
-      internalID: 1072610505
+      spriteID: 1b9137d949ca4ea4194b26d8d5c19af9
+      internalID: 227149737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrightForest_2
+      name: CaveGoods_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0eb2d23bf71434f95b174a237c3716
+      internalID: -1216759083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGoods_3
+      rect:
+        serializedVersion: 2
+        x: 352
         y: 288
         width: 32
         height: 32
@@ -292,17 +187,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c78ed31c17745e4f9ab6d6496f3883f
-      internalID: -1574675788
+      spriteID: 64873235005ab284a95e148fd9428a9d
+      internalID: -911072735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrightForest_3
+      name: CaveGoods_4
       rect:
         serializedVersion: 2
-        x: 160
+        x: 384
         y: 288
         width: 32
         height: 32
@@ -313,18 +208,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1452b8af9848e7840a177262bad40bd5
-      internalID: -946655633
+      spriteID: 1ae37fee961ffe74a8c8cfb4431ec835
+      internalID: 1700108626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrightForest_4
+      name: CaveGoods_5
       rect:
         serializedVersion: 2
-        x: 384
-        y: 64
+        x: 416
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -334,29 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3589aaff995f51f4092fd54e7ae49f5e
-      internalID: -2112404567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrightForest_5
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4271cda15e89fdc43a7c1e061bbb4f5c
-      internalID: -1746290569
+      spriteID: a8c8e7f05cb231a48ac1f83617058e86
+      internalID: -2047713178
       vertices: []
       indices: 
       edges: []
@@ -372,18 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BrightForest_0: -1619886282
-      BrightForest_1: 1072610505
-      BrightForest_2: -1574675788
-      BrightForest_3: -946655633
-      BrightForest_4: -2112404567
-      BrightForest_5: -1746290569
-      flower1: 1894294340
-      flower2: -849528552
-      flower3: -690512184
-      flower4: 1828872683
-      flower5: -732526379
-      grass: 674179960
+      CaveGoods_0: -1431170555
+      CaveGoods_1: 227149737
+      CaveGoods_2: -1216759083
+      CaveGoods_3: -911072735
+      CaveGoods_4: 1700108626
+      CaveGoods_5: -2047713178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3402,7 +3402,7 @@ PrefabInstance:
     - target: {fileID: 5015896469803966780, guid: 86cd73ec85f6e3d44a9bdcd4151f311b, type: 3}
       propertyPath: lanternPrefab
       value: 
-      objectReference: {fileID: 5957408781536081199, guid: a4cb8b23657274e4b9f3c0a3f539ed06, type: 3}
+      objectReference: {fileID: 5957408781536081199, guid: 53d7fc1a2cc9f514a942028ae0033da9, type: 3}
     - target: {fileID: 5015896469803966780, guid: 86cd73ec85f6e3d44a9bdcd4151f311b, type: 3}
       propertyPath: SettingLanternSE
       value: 
