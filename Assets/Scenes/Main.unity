@@ -3414,7 +3414,7 @@ PrefabInstance:
     - target: {fileID: 5015896469803966780, guid: 86cd73ec85f6e3d44a9bdcd4151f311b, type: 3}
       propertyPath: settingLanternSE
       value: 
-      objectReference: {fileID: 8300000, guid: fc72869b8fa3db34593a82e91861f68e, type: 3}
+      objectReference: {fileID: 2048301947}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

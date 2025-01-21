@@ -458,7 +458,7 @@ MonoBehaviour:
   - {fileID: -434060474, guid: b4478d6ce1ba5d24ea4a6e91a99edcf8, type: 3}
   - {fileID: 1055440981, guid: b4478d6ce1ba5d24ea4a6e91a99edcf8, type: 3}
   frameRate: 0.3
-  walkSE: {fileID: 8300000, guid: 1f45134ce37dc324da993e6d89f7c325, type: 3}
+  walkSE: {fileID: 104705920}
 --- !u!1 &216878763
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1522988834}
   m_HandleRect: {fileID: 1246287203}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -30
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -892,8 +892,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1915459813}
-        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
-        m_MethodName: SetSE
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetSeVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -993,7 +993,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1289,10 +1289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 540}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1935,7 +1935,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1682480948}
   m_HandleRect: {fileID: 586988659}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -30
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -1943,8 +1943,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1915459813}
-        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
-        m_MethodName: SetBGM
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetBgmVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3205,8 +3205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 78ba0fe640b5a294bb3d89a4a7b3c2b2, type: 2}
-  BGMSlider: {fileID: 979389449}
-  SESlider: {fileID: 554779551}
+  bgmSlider: {fileID: 979389449}
+  seSlider: {fileID: 554779551}
 --- !u!1 &2100852762
 GameObject:
   m_ObjectHideFlags: 0
